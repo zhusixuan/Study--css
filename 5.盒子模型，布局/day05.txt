@@ -1,0 +1,180 @@
+1.选择器
+  伪类选择器
+    a:link
+    a:visited
+    a:hover
+    a:active
+form *:focus
+    :checked
+    :default
+    :valid
+    :invalid
+    :reqiured
+    :optional
+    :in-range
+    :out-of-range
+    :disabled
+    :enabled
+  伪元素选择器
+    ::before  content:""
+    ::after   content:""
+    ::selection
+    ::first-letter
+    ::first-line  
+2.声明块里面的单位
+  长度或者尺寸
+    px   em    rem
+  颜色
+    颜色关键字   red,blue
+    十六进制     #000-#fff
+    rgb()  0-255
+    rgba()
+  百分比
+    <div style="width:100px;height:100px;">
+      <div style="width:100%;height:100%"></div>
+    </div> 
+3.继承性
+  color,font-,text-,letter-
+    color:initial;
+  inherit  改变属性的继承性，变为继承
+    border:inherit;
+4.文本样式
+  color:
+  text-
+    indent  缩进
+    transform   变形   low
+    shadow    文字阴影    在x轴偏移的距离 在Y轴偏移的距离  模糊程度  color
+    align 
+    decoration 
+  font-
+    size  16px,1em
+    family     sans-serif
+    weight     bold bolder normal lighter 100-900
+    style   italic   mormal ...
+    streth
+5.列表样式
+  list-style-type
+    disc   默认
+    circle  空心原点
+    square  实心原点....
+  list-style-image
+    url(相对路径)
+  list-style-position
+    outside
+    inside 
+
+    初始化：
+    ul li {
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+6.a标签
+  cursor:pointer;
+  初始化：
+  a{
+    text-decoration:none;
+    color:black;
+  }
+7.盒子模型
+  width
+  height
+  padding
+  border
+  margin
+  标准（W3C）    box-sizing:content-box;
+    width:contentWdith;
+    盒子占据大小
+      width + 2*padding + 2*border
+    实际占据的空间
+      盒子占据大小 + 2 * margin
+  IE盒子模型     box-sizing:border-box;
+    width = contentWdith + 2*padding + 2*border
+    盒子占据的大小
+      =width
+    实际占据大小
+      width + 2 * margin
+8.背景
+  background-color
+  background-image
+  background-repeat
+    背景是否平铺整个盒子
+    repeat  no-repeat repeat-x  repeat-y
+  background-origin(设置背景的开始部分)
+    content-box  背景从内容区开始平铺
+    padding-box  背景从padding区域开始平铺
+    border-box   默认
+  background-clip(裁剪，设置背景的结束部分)
+    content-box  背景从内容区结束
+    padding-box  背景从padding区域结束
+    border-box   默认
+  background-opsition
+    1.x轴的方向          Y轴
+      left center right  top center bottom
+    2.百分比
+    3.图片精灵技术
+  background-attachment
+    1.fixed 背景图片固定在视口
+    2.scroll 背景图片绑定在元素  默认值
+    3.local  背景图片随着内容滚动
+  background-size  给背景图片设置大小
+    1.20px 20px;
+  速记写法
+    background:url() 0 0 no-repeat;
+9.overflow
+  hidden   默认值
+    当元素内容超过元素自身大小的时候，多出的部分隐藏
+  scroll
+    多出的部分滚动
+    横向和竖向都可以进行滚动
+  auto
+    只进行竖向滚动
+10.边框
+  border:1px solid red;
+  border-width
+  border-style
+  border-color
+  border-image:url() 27 repeat;
+11.表格
+  table-layout
+    fixed
+      以第一行第一列的宽度，作为固定宽度，分配给后面的单元格
+    auto
+      以表头的宽度去设置，成比例
+  border-collapse
+    collapse  边框合并
+    separate  边框分离
+  caption-side
+    top
+    bottom
+12.布局
+  浮动布局
+  display属性
+  定位布局
+    position
+      static     默认定位
+      relative   相对定位
+        相对于自己原来的位置
+      absolute   绝对定位
+        1.当父级元素没有定位元素或者定位元素为static的时候，元素相对于页面进行定位
+        2.当父级元素中有相对定位或者绝对定位的时候，元素相对于父级进行定位
+      fixed       固定定位
+        相对于视口进行定位
+    z-index配合定位元素
+      1.只有有poisition属性的时候才可以设置z-index,数值，越大层级越高
+      2.从父现象
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+

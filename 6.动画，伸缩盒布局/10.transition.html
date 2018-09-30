@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>transition</title>
+  <style>
+    div{
+      width:100px;
+      height: 100px;
+      background-color: pink;
+      margin:100px auto;
+    }
+    div:hover{
+      width:130px;
+      height: 130px;
+      box-shadow: 5px 5px 5px #666, -5px -5px 5px #666,-5px 5px 5px #666,5px -5px 5px #666;
+      transition-property:all;
+      transition-duration: 4s;
+      transition-delay: 2s;
+      transition-timing-function: linear;
+      
+      transition: all 4s linear 2s;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

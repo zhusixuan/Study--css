@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>层级选择器的优先级</title>
+  <style>
+    #brother+div{border:1px solid green;}
+    .brother{border:1px solid red;}
+  </style>
+</head>
+<body>
+  <div class="brother" id="brother">brother</div>
+  <div class="brother">brother</div>
+  <div class="brother">brother</div>
+</body>
+</html>

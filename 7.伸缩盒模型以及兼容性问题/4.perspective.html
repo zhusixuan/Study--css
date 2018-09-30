@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /*观众*/
+    .stage{
+      width:1000px;
+      height: 150px;
+      border:1px solid red;
+      display: flex;
+      perspective:500px; 
+      perspective-origin: 0% 100%;
+      transform-style: preserve-3d;
+    }
+    /*演员*/
+    .box{
+      width:100px;
+      height: 100px;
+      margin:10px;
+      background-image: url(./images/icon.png);
+      transform: rotateY(90deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>

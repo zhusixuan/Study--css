@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /*默认被选中的选择器*/
+    form *:default{
+      background-color: red;
+      outline: 1px solid green;
+    }
+    /*通过验证的时候*/
+    form *:valid{
+      background-color:pink;
+    }
+    /*不同过验证的时候*/
+    form *:invalid{
+      background-color:red;
+      outline: 1px solid red;
+    }
+    /*必填项*/
+    form *:required{
+      border:none;
+    }
+    /*选填,不是必填项*/
+    /* form *:optional{
+      background-color:black;
+    } */
+
+    form *:in-range{
+      background-color: red;
+    }
+    form *:out-of-range{
+      background-color:#ccc;
+    }
+  </style>
+</head>
+<body>
+    <form action="#">
+      <input type="text" name="username" value="张三" required><br>
+      <input type="password" name="password"><br>
+      <input type="text" name="telephone" disabled><br>
+
+      <label for="male">男</label>
+      <input type="radio" checked id="male" name="gender" value="male">
+      <label for="female">女</label>
+      <input type="radio" id="female" name="gender" value="female"><br>
+      
+      <input type="number" min="10" max="30" value="100">
+
+      <input type="submit">
+    </form>
+</body>
+</html>

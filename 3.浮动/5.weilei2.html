@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>伪类选择器</title>
+  <style>
+    /*以p作为第二个孩子*/
+    /*p:nth-child(2){
+      background-color: red;
+    }*/
+    /*以P作为倒数第二个孩子*/
+    /*p:nth-last-child(2){
+      background-color: pink;
+    }*/
+    /*以P作为最后一类元素*/
+    p:last-of-type{
+      background-color: blue;
+    }
+    /*父亲元素中。p标签类型中的第二个*/
+   /* p:nth-of-type(2){
+      background-color: red;
+    }*/
+    /*不同的父元素中，p标签的倒数第二个元素*/
+   /* p:nth-last-of-type(2){
+      background-color: pink;
+    }*/
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <p class="son">第1个孩子</p>
+    <p class="son">第2个孩子</p>
+    <p class="son">第3个孩子</p>
+    <p class="son">第4个孩子</p>
+  </div>
+  <p class="type">ptype1</p>
+  <p class="type">ptype2</p>
+</body>
+</html>

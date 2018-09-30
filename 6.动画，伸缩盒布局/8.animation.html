@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>动画</title>
+  <style>
+    div{
+      width:100px;
+      height: 100px;
+      background-color: pink;
+      margin:100px auto;
+      /*动画的名字*/
+      animation-name:myAnimation;
+      /*动画持续时间*/
+      animation-duration:3s;
+      /*循环次数   数字表示，无数次infinite*/
+      animation-iteration-count: 0.5;
+      /*动画执行方向   交替执行*/
+      animation-direction: alternate;
+      /*动画一开始的时候从to到from*/
+      animation-direction: reverse;
+      /*从to到from交替执行*/
+      animation-direction: alternate-reverse;
+      animation-fill-mode: forwards;
+      /*动画延时*/
+      animation-delay: 3s;
+    }
+    @keyframes myAnimation{
+      /*起点*/
+      from{
+        width:100px;
+        height: 100px;
+        background-color: pink;
+      }
+      /*终点*/
+      to{
+        width:100px;
+        height: 100px;
+        background-color: pink;
+        border-radius: 50%;
+        box-shadow:1px 1px 25px #ccc,-1px -1px 25px #ccc,1px -1px 25px #ccc,-1px 1px 25px #ccc;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

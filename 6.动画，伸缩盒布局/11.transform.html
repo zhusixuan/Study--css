@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>transform</title>
+  <style>
+    *{
+      margin:0px;
+      padding:0px;
+    }
+    div{
+      width:100px;
+      height: 100px;
+      background-color: pink;
+      margin:100px auto;
+    }
+    div:first-child{
+      background-color: green;
+      transform:translate(10px,10px);
+      /*transform:scale(1.2);*/
+      /*transform:scaleX(1.2);*/
+      /*transform:scaleY(1.2);*/
+      /*transform:scaleZ(1.2);*/
+      /*transform: skew(45deg);*/
+      transform:rotateX(30deg);
+      transform:rotateY(30deg);
+      transform:rotateZ(30deg);
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <div></div>
+</body>
+</html>

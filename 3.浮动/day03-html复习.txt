@@ -1,0 +1,145 @@
+1.html
+  块级元素
+    div table p ul li ol li form h1-h6 dl dt dd
+    thead tfoot tbody 
+    1.独占一行
+    2.可以设置宽高
+    3.不由内容决定
+  行内元素
+    span img input select a strong em b i s u ...
+  空元素
+    img input..
+  替代元素
+2.display
+  inline
+    将其他元素转换为行内元素
+  block
+    将其他元素转换为块级元素
+  inline-block
+    将其他元素转换为行内块级元素
+    1.设置宽高 2.排在一行
+  none
+    将元素隐藏，以及将元素的所占位置也隐藏
+3.form  
+  action
+    代表你要提交的页面   login.action
+  method
+    get:安全性低，限制数据量，1024字节，提交在url地址栏，查询字符串
+      ？key=value
+      localhost:8080?username=王文
+    post:安全性较高，不限制数据量的大小
+      网络
+        username:王文
+  enctype
+    application/x-www-for...
+      对特殊字符编码
+      @ # ￥ %..    %222%s222
+    multipart/form-data
+      提交文件时候用的编码格式
+    text/plain
+      把空格转换为加号
+5.form表单控件
+  input
+    type
+      text
+      password
+      button
+      redio
+      checkbox
+      reset
+      submit
+      file
+      image
+      hidden
+    value
+      提供默认值，可以随着表单提交
+    name
+      提交表单时候
+      <input type="text" name="username" value="张飞"> 
+      username=张飞
+    disabled
+      禁用表单元素，不会提交
+    size
+      表示长度
+    maxlength
+      表示输入的时候最大长度
+  select    name
+    option  
+      value, <option value="日本">日本</option>
+      disabled  表示禁用   
+  label
+    for="user"
+
+    <label for="user">用户名</label>
+    <input type="text" id="user">
+  textarea
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+  button
+    type
+      button
+      submit
+      reset
+
+6.新增的表单元素
+  progress
+    value
+  output
+    表示一种输出
+      2+3=5
+  meter
+    min
+    max
+    value
+    low
+    high
+    optimum
+  datalist
+    1.记忆功能
+    2.搜索
+    select
+      option
+  <input type="text" list="list1">
+  <datalist id="list1">
+    <option value=""></option>
+  </datalist>
+7.input
+    type
+      tel
+        pattern="[0-9]{11}"
+      number
+        e,只可以输入数字
+      email
+        @
+      range
+        范围
+      color
+      search
+      url
+        http://
+        https://
+      date
+        年月日
+      week
+        年周
+      month
+        年月
+      datetime-local
+        年月日日分
+      time
+        时分
+8.新增属性
+  required
+  disabled
+  placeholder
+    提示作用，不会随着表单默认提交
+  value
+    随着表单默认提交
+  autofocus
+  list
+  pattern
+  min
+  max
+
+
+
+

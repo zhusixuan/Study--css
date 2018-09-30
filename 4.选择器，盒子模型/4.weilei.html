@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>伪类选择器</title>
+  <style>
+    /*在元素之前添加内容*/
+   /*  p::before{
+     content: "*";
+     color:red;
+   } */
+    /*在元素之后添加内容*/
+   /*  p::after{
+     content:"这是结尾部分";
+     color:red;
+   } */
+    /*选中第一个字母或者汉字*/
+    p::first-letter{
+      background-color: pink;
+    }
+    /*选中第一行*/
+    p::first-line{
+      color:red;
+    }
+    form *::selection{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <p>这是一段文本</p>
+  <form action="#">
+    <input type="text" name="username">
+    <textarea name="desc" id="" cols="30" rows="10"></textarea>
+  </form>
+</body>
+</html>

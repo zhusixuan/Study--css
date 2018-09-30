@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>属性选择器</title>
+  <style>
+    *{
+      margin:0px;
+      padding:0px;
+    }
+    div[class=book]{
+      width:700px;
+      margin: 0 auto;
+      /*float: right;*/
+      overflow: hidden;
+      /*border:1px solid red;*/
+    }
+    ul li{
+      list-style: none;
+      float: left;
+      margin:10px;
+    }
+    .book ul li img{
+      width:150px;
+      height: 150px;
+    }
+    /*属性选择器*/
+   /*  p[class=text]{
+     text-align:center;
+   } */
+    div[title]{
+      border:1px solid red;
+    }
+    /* p[class~=desc]{
+      text-align: center;
+    } */
+    /* p[class ^= t]{
+      text-align: center
+    } */
+
+    /* 以**结尾，如果是多值的话是要以最后类的最后一个内容结尾 */
+    /* p[class$=c]{
+      text-align: center;
+    } */
+
+    /* 属性中包含有什么内容的选择器 */
+    p[class *= ex]{
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="book" title="这是一个container">
+    <ul>
+      <li>
+        <a href="#">
+          <img src="./images/1.jpg" alt="">
+        </a>
+        <p class="text desc">这是一本书</p>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/2.jpg" alt="">
+        </a>
+        <p class="text desc">这是一本书籍</p>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/3.jpg" alt="">
+        </a>
+        <p class="text desc">这是一本书籍</p>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/4.jpg" alt="">
+        </a>
+        <p class="text desc">这是一本书籍</p>
+      </li>
+     <!--  <li><a href="#"><img src="./images/1.jpg" alt=""></a></li>
+      <li><a href="#"><img src="./images/2.jpg" alt=""></a></li>
+      <li><a href="#"><img src="./images/3.jpg" alt=""></a></li>
+      <li><a href="#"><img src="./images/4.jpg" alt=""></a></li> -->
+    </ul>
+  </div>
+</body>
+</html>

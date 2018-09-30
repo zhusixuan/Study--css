@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>伪类选择器</title>
+  <style>
+    /*p标签作为第一个孩子出现的标签*/
+    /*p:first-child{
+      background-color: red;
+    }*/
+    /* 任意一个父元素中的第一个P标签 */
+    /* p:first-of-type{
+      background-color: red;
+    } */
+
+    /* p作为唯一的孩子节点   独生 */
+    /*p:only-child{
+      background-color: red;
+    }*/
+    /*以P作为最后一个孩子*/
+    p:last-child{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <p class="son1">body中的第1个P</p>
+  <div class="parent">
+    <img src="./images/1.jpg" alt="">
+    <p class="son">第一个孩子</p>
+    <p class="son">第二个孩子</p>
+    <p class="son">第三个孩子</p>
+    <p class="son">第四个孩子</p>
+    <p class="son">第五个孩子</p>
+  </div>
+  <p class="son1">body中的第2个P</p>
+  <div class="only">
+    <p>onlyson</p>
+  </div>
+</body>
+</html>

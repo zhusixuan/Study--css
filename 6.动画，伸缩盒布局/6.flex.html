@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flex-justify</title>
+  <style>
+    *{
+      margin:0px;
+      padding:0px;
+    }
+    .parent{
+      border:1px solid red;
+      width:100%;
+      display: flex;
+
+      /*控制在伸缩盒X轴上的元素位置*/
+
+      /*是在X轴左侧*/
+      justify-content: flex-start;
+      /*X轴右侧*/
+      justify-content: flex-end;
+      /*X轴中间*/
+      justify-content: center;
+      /*平分剩余区域*/
+      justify-content: space-around;
+      /*空白区域在中间显示*/
+      justify-content: space-between;
+    }
+    .son{
+      width:100px;
+      height: 100px;
+      background-color: pink;
+      margin:10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="son">son1</div>
+    <div class="son">son2</div>
+    <div class="son">son3</div>
+  </div>
+</body>
+</html>

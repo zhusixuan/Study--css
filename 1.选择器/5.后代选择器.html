@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后代选择器</title>
+  <style>
+    *{
+      margin:0;
+    }
+    body{
+      margin:0;
+    }
+    /*后代选择器*/
+    .parent .son{
+      border:1px solid red;
+    }
+    /*子代选择器  子一代*/
+    /*.parent>.son{
+      border:1px solid red;
+    }*/
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="son">
+      son
+      <div class="grandson">grandson</div>
+      <div class="son">grandson</div>
+    </div>
+    <div class="son">son</div>
+    <div class="son">son</div>
+    <div class="son">son</div>
+  </div>
+</body>
+</html>

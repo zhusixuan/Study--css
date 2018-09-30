@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>background</title>
+  <style>
+    .one{
+      width:24px;
+      height: 24px;
+      border:1px solid red;
+      background-image: url(./images/icon2.png);
+      background-image: url(./images/icons.png);
+      background-repeat: no-repeat;
+      /*1.代表左右表示表示方式（left,center,right），代表上下的(top,center,bottom)*/
+      background-position:left center;
+      /*2.设置百分比*/
+      background-position: 50% 50%;
+      /*3.图片精灵技术*/
+      background-position: 0 -44px;
+
+      background:url(./images/icons.png) 0 -44px no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <div class="one"></div>
+</body>
+</html>

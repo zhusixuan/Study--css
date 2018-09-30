@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div{
+      color:pink;
+      font-size:20px;    
+      font-family: "黑体";
+      font-style: italic;  /* 斜体 */
+      font-style: normal;  /*正常字体*/
+      /*bold bolder lighter 100-900    */
+      font-weight:bold; 
+      font-weight:bolder; 
+      font-weight:lighter; 
+      font-weight:700; 
+
+      width:200px;
+      border:1px solid red;
+      text-align: center;
+      text-align: right;
+      text-align: left;
+
+      text-indent: 10px;
+
+
+    }
+    a{
+      text-decoration: none;
+      text-decoration: underline;
+      text-decoration: overline;
+      text-decoration: line-through;
+    }
+    /*字母变形：大写，小写，首字母大写*/
+    div{
+      text-transform: lowercase;
+      text-transform: uppercase;
+      text-transform: capitalize;
+    }
+    /*text-shadow:代表水平位置偏移量 垂直偏移量  模糊程度  颜色  */
+    div.one{
+      text-shadow: 5px 5px 3px green , -5px -5px 3px yellow;
+    }
+    div.one{
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div>abcdefghijklmnABCDEFGHIJKLMN</div>
+  <div class="one">这是一行文本
+    <p>看看是否继承</p>
+  </div>
+  <a href="#">点我</a>
+</body>
+</html>

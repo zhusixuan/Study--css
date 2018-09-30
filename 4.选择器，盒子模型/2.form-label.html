@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>form</title>
+  <style>
+    /*可用状态*/
+    form *:enabled{
+      background-color:pink;
+    }
+    /*禁用状态*/
+    form *:disabled{
+      background-color:blue;
+    }
+    /*聚焦状态*/
+    form *:focus{
+      background-color:red;
+    }
+    /*默认被选中*/
+    form *:checked{
+      outline:1px solid red; 
+    }
+  </style>
+</head>
+<body>
+  <form action="#">
+    <input type="text" name="username" value="张三"><br>
+    <input type="password" name="password"><br>
+    <input type="text" name="telephone" disabled><br>
+
+    <label for="male">男</label>
+    <input type="radio" checked id="male" name="gender" value="male">
+    <label for="female">女</label>
+    <input type="radio" id="female" name="gender" value="female"><br>
+
+
+
+    <input type="submit">
+  </form>
+</body>
+</html>

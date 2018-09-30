@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>层级选择器的优先级</title>
+  <style>
+    .parent .son{border:1px solid red;}  /*20*/
+    .parent>.son{border:1px solid pink;} /*20*/
+    .son{border:1px solid green;}  /*10*/
+  </style>
+</head>
+<body>
+  <div class="parent">
+    parent
+    <div class="son">son</div>
+  </div>
+  <div class="son"></div>
+</body>
+</html>

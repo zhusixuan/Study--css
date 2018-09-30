@@ -1,0 +1,114 @@
+1.弹性盒模型
+  【注意】下面属性是加在父级上
+    display:flex
+    flex-direction
+      row  列布局
+      column 行布局
+      row-reverse
+      column-reverse
+    flex-wrap
+      nowrap
+      wrap
+    flex-flow:row wrap
+    align-items
+      flex-start
+      flex-end
+      center
+    justify-content
+      flex-start
+      flex-end
+      center
+      space-between
+      space-around
+  等比例分布
+    flex:1
+2.column
+3.网格布局
+4.动画
+  animation-name
+  animation-duration
+  animation-delay
+  animation-timing-function
+    esae ease-in ease-out ease-in-out linear
+  animation-fill-mode
+    forwards设置最后一帧是动画结束时候的那一帧
+    backwards设置动画第一帧为动画还未执行时候的画面
+  animation-direction
+    alternate
+    reverse
+    alternate-reverse
+  animation-iteration-count
+    inifite  无数次
+  animation-play-state   通过事件控制
+    paused
+    running
+
+  @keyframes myAnimation{
+    from{}to{}
+  }
+  @keyframes myAnimation{
+    0%{}
+    100%{}
+  }
+5.transition
+  transition-property
+    all  
+  transition-duration
+  transition-delay
+  transition-timing-function
+
+  transition:all 4s;
+6.animation和transition
+  animation
+    1.可以自动执行
+    2.可以设置中间帧
+  transition  过渡
+    1.需要事件触发
+    2.只可以设置起始和结束帧
+7.transform
+  1.translate(10px)
+  2.scale(1.2)
+  3.skew(45deg)
+  4.rotate(90deg)
+  perspective
+  transform-style
+  transform-origin
+8.兼容性前缀
+  火狐： -moz-
+  opera  -o-
+  谷歌   -webkit-
+  IE     -ms-
+9.媒体查询
+   @media screen and (max-width:600px){
+     写对应尺寸的CSS代码
+   }
+   @media screen and (max-width:1366px) and (min-width:1000px){
+     CSS代码
+   }
+
+   超小屏 768px
+   小屏   768-992px
+   中屏   992-1200
+   大屏   1200+
+
+   <800px
+   >800px
+10.兼容性问题
+  1.伪类和伪元素选择器在IE浏览器中，部分版本不兼容；
+  2.img标签底部产生间隙
+    IE6及其以下版本会产生
+      解决方案：
+        1.img：display:block
+        2.给img的父级加：font-size:0;
+  3.在a标签内部嵌套img标签的时候回产生蓝色边框
+    IE10及其以下的版本会产生蓝色边框
+      解决方案：
+        1.给img加border：none;
+  4.IE5.5和IE6产生双倍边距问题
+      解决方案：
+        1.display:inline
+  5.margin上下边框合并问题
+    1.只给一个容器调整外边框即可，不要同时给两个
+  6.父子之间上外边距合并问题
+
+

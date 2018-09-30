@@ -1,0 +1,127 @@
+1.结构性标签
+  header
+  nav
+  article
+  section
+  aside
+  footer
+  address
+2.figure figcaption
+3.details summary
+4.form
+  form
+  用在提交表单的按钮上 input
+    formaction
+    formmethod
+    formenctype
+    formnovalidete
+    formtarget
+5.CSS
+  1.语法
+    选择器{属性名:属性值;}
+  2.工作原理
+  3.选择器
+    类选择器
+    id选择器
+    标签选择器
+    *
+    空格
+    >
+    +
+    ~
+    div.one  组合
+    .one,.two
+  4.css的引入方式
+    行内式 
+      <div style="background-color:red;"></div>
+      <div style="background-color:red;"></div>
+    嵌入式
+      head
+        style
+        div{background-color:green;}
+    外部式
+      head
+        link rel href="css文件的位置"
+        @charset="utf-8"
+        div{background-color:pink}
+  5.优先级
+      important   行内式   id     class   标签    *
+      正无穷      1000     100    10       1      0
+    后代选择器的优先级
+      加法原则
+      谁的范围小，谁的优先级高
+    属性的选择
+      权重相同的时候，遵循就近原则
+      权重不同的时候，计算权值，权值高的优先级更高
+  6.块级元素和行内元素的特点
+    块级元素
+      1.独占一行;
+      2.宽度占据父级标签的100%;
+      3.可以设置宽高
+    行内
+      1.不独占一行
+      2.宽度根据内容自动调整；
+      3.不可以设置宽高
+  7.display
+    所有的元素都可以加display属性，展示
+      none    让元素不展示
+      block   让元素块级展示
+      inline  元素行内展示
+      inline-block   行内块级展示
+  8.float  浮动
+    文档流
+      代码：
+        从上往下执行
+      浏览器
+        从左往右从上往下
+    float
+      left
+      right
+      inherit
+      none
+    打破文档流飘起来，浮起来：float 飘多少宽高：margin
+    1.块级元素的浮动
+      1.兄弟元素的浮动
+        1）如果第一个元素浮动，那么后面的元素会顶上去
+        2）如果兄弟元素的第二个元素浮动，除了改元素之外的文档流不变，该元素在自己原来的位置进行浮动，浮动了margin的值
+        3）如果兄弟元素中所有的元素都浮动起来，那么会在一行内排列，如果超出一行，会自动换行
+      2.父子级之间的浮动
+        当子级设置了浮动之后，父级没有设置浮动，且没有设置高度，会产生塌陷
+          解决方案：
+          1.父级设置float：left
+          2.父级设置overflow:hidden
+    2.行内
+      行内元素会围绕在浮动元素的周围
+  浮动的特性
+    当设置了浮动之后，块级元素不再独占一行，而是变成行内块级元素
+    当设置了浮动之后，行内元素会变成行内块级元素
+    浮动的元素之间不会产生覆盖
+    【重要】
+      行内元素不能设置清除浮动
+  9.清除浮动
+    clear
+      left   清除左边的浮动
+      right   清除右边的浮动 
+      both    清除两边的浮动
+    margin:外边距
+      1:margin:10px;上下左右
+      2:margin:10px 5px;   上下10  左右5
+      3:margin:10px 5px 8px;   上10  左右5 下8;
+      4:margin:10px 4px 23px 10px;   上右下左
+    padding:内边距
+      1:margin:10px;上下左右
+      2:margin:10px 5px;   上下10  左右5
+      3:margin:10px 5px 8px;   上10  左右5 下8;
+      4:margin:10px 4px 23px 10px;   上右下左
+  10.命名 
+    1.简单命名
+      header/content,main/aside/nav/footer/brand....
+    2.驼峰式命名
+      大驼峰
+        FirstName
+        BrandMsc
+      小驼峰
+        brandMsc
+
+
+

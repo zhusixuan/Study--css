@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>media</title>
+  <style>
+    body,ul,li,p,h3{
+      margin:0;
+      padding:0;
+    }
+    ul li{
+      list-style: none;
+      display: flex;
+    }
+    ul li a{
+      text-decoration: none;
+      color:#223B69;
+    }
+    header{
+      display: block;
+    }
+    header .header{
+      height: 42px;
+      width: 100%;
+      background-color: #222222;
+      border-bottom: 1px solid #030303;
+    }
+    /*最小屏为800的时候，采用这个样式*/
+    @media screen and (min-width: 800px){
+      header .header .minscreen{
+        display: none;
+      }
+      header .header ul{
+        display: flex;
+        width:1000px;
+        margin:0 auto;
+      }
+      header .header ul li{
+        margin-left:20px;
+        line-height: 42px;
+        width:80px;
+      }
+      header .header ul li:nth-child(2),header .header ul li:nth-child(3),header .header ul li:nth-child(4){
+        width:140px;
+      }
+      header .header ul li a{
+        display: block;
+        color:#666;
+      }
+      header .header ul li a:hover{
+        color:white;
+        font-weight: 600;
+      }
+    }
+    /*最大屏为800的时候，才用下面的样式*/
+    @media screen and (max-width: 800px){
+      header .header ul{
+        display: none;
+      }
+      header .header .minscreen{
+        float: left;
+        width:100%;
+      }
+      header .header .minscreen h3{
+        float: left;
+        color:#666;
+        line-height: 42px;
+        margin-left: 20px;
+      }
+      header .header .minscreen h3:hover{
+        color:white;
+        font-weight: bold;
+      }
+      header .header .minscreen img{
+        width:50px;
+        height: 42px;
+        float: right;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <ul>
+        <li>
+          <a href="#">首页</a>
+        </li>
+        <li>
+          <a href="#">bootstrap中文网</a>
+        </li>
+        <li>
+          <a href="#">bootstrap3中文网</a>
+        </li>
+        <li>
+          <a href="#">bootstrap4中文网</a>
+        </li>
+        <li>
+          <a href="#">less教程</a>
+        </li>
+        <li>
+          <a href="#">juery教程</a>
+        </li>
+        <li>
+          <a href="#">网站实例</a>
+        </li>
+      </ul>
+      <div class="minscreen">
+        <h3>boorstrap中文网</h3>
+        <img src="./images/right-icon.png" alt="">
+      </div>
+    </div>
+  </header>
+</body>
+</html>

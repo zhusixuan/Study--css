@@ -1,0 +1,123 @@
+1.兄弟元素
+  在文档流中，上下边距合并，取最大者作为其边距
+  对于浮动，上下边距相加
+2.父子元素
+  在文档流中，如果给父子级同时设置边距，上边距会发生合并
+  1）父级元素浮动
+  2）父级元素加边框
+  3）自己加浮动
+  4）父级加overfolw:hidden;
+  5）给父级加display:inline-block
+3.属性选择器
+  [key]
+  [key=value]   只能有一个属性值
+  [key~=value]  选择其中的一个属性值
+  [key ^= val ]  以val开头
+  [key $= val]   以val结尾
+  [key *= val]   包含val属性值
+4.伪类选择器
+  :first-child
+  :last-child
+  :only-child
+  :nth-child(2)
+  :nth-last-child(1);
+  :first-of-type
+  :last-of-type
+  :nth-of-type(2)
+  :nth-last-of-type(2)
+
+  a标签的美化
+  :link
+  :visited
+  :hover
+  :active
+
+  form表单
+  :focus      当鼠标聚焦的时候
+  :enabled    当form表单控件非禁用的时候
+  :disabled   表单控件禁用的时候
+
+  :checked    选中默认被选中的选择器 type:radio checkbox
+  :default    ?
+  :valid    表单通过验证
+  :invalid  表单不通过验证
+
+  :required   表示必填
+  :optional   表示选填，或者不是必填
+  :in-range   表示在范围内
+  :out-of-range   表示在范围之外
+5.伪元素选择器
+  ::before   在元素之前添加文本，内容
+  ::after    在元素后面添加文本或内容
+  ::first-letter  第一个字母或者汉字
+  ::first-line     第一行文本
+  ::selection     表单控件选中的时候
+3.单位
+  1.长度与尺寸单位
+    px    像素单位
+    em    相对单位，相对自己的父级 16px
+    rem   相对单位，相对自己的父级 16px
+  2.颜色单位
+    颜色关键字：red/pink/blue/green/....
+    十六进制：#000000 - #ffffff   从黑到白
+    rgb函数：
+      r:red : rgb(255,0,0)
+      g:green : rgb(0,255,0)
+      b:blue : rgb(0,0,255)
+      grba()   a代表透明度，0完全不显示，1本色
+4.继承性
+  color,font-,text-,letter-这些属性是可以被继承的
+5.文本
+  color
+  font-
+    size:设置字号
+    family:字体
+    weight:粗细
+    style:italic
+  text-
+    align:  文字居中
+      left
+      right
+      center
+    indent 文字缩进
+    transform 文字变形
+        uppercase
+        lowercase
+        capitalize
+    shadow   文字阴影
+      水平偏移量  垂直偏移量  模糊程度  颜色
+      用,隔开，写两个不同的偏移
+    decoration  文字线条
+      none
+      underline
+      overline
+      line-througn
+  letter-
+    spacing  文字之间的间隙，默认为0，可以设置负值
+5.列表
+  ul>li无序列表  ol>li 无序列表  dl>dt+dd描述列表
+  list-style-type
+      none
+      square
+      ...
+  list-style-image
+      url(相对路径)
+  list-style-position
+      outside
+      inside
+  list-style速记写法
+    [<type>][<image>][<position>]
+6.盒子模型
+  标准盒子模型  box-sizing:content-box
+    width = 内容区域的宽度
+    盒子实际大小 = width + 2*padding + 2*border
+    所占空间 = 盒子实际大小 + 2*margin
+  IE盒子  box-sizing:border-box
+    contentWidth = width - 2*padding - 2*border
+    盒子实际大小 = width
+    所占空间 = width + 2*margin
+
+
+
+
+

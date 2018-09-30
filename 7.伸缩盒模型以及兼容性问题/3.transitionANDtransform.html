@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>动画</title>
+  <style>
+    div{
+      width:100px;
+      height: 100px;
+      background-image: url(./images/icon.png);
+      /*border-radius:50%; */
+      margin:0 auto;
+    }
+    div:hover{
+      transform:scale(1.2);
+      box-shadow: 2px 2px 24px pink,-2px -2px 24px pink,-2px 2px 24px pink,2px -2px 24px pink;
+      transition: all 1s;
+      -ms-transition:all 1s;
+      -moz-transition:all 1s;
+      -webkit-transition:all 1s;
+      -o-transition:all 1s;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

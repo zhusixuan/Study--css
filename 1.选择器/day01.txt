@@ -1,0 +1,81 @@
+HTML5中新增的表单元素
+  pregress
+  output
+  meter
+    min
+    max
+    low
+    high
+    value
+    optimum
+  datalist
+input控件中新增的type类型
+  type
+    date
+    time
+    datetime-local
+    month
+    week
+
+    email
+    tel
+    url
+    color
+    search
+    number
+    range
+属性  
+  required  布尔属性
+  autofocus 自动聚焦
+  placeholder  提示
+    value
+  list
+  max/min
+1.html中遗留的内容
+  form
+    form
+    formaction
+    formmethod
+    formtarget
+    formnovalidate
+    formenctype
+  h5结构性元素
+    header
+    nav
+    article
+    section
+    aside
+    footer
+    address
+  figure>figcaption
+  details>summary
+2.css3
+  1.层叠样式表
+    html  css           js
+    框架  穿衣服        把网页变活
+    静态页面的重构  
+  2.语法
+    <p style="background-color:pink;"></p>
+    p { backgroung-color:red;}
+  3.工作原理
+  4.引入
+    行内式
+      元素的style属性
+    嵌入式
+      在当前html文档的头部加入style标签，填入css代码
+  5.选择器
+    id选择器   页面上有唯一被选中的元素的时候
+    标签选择器  直接选中标签
+    类选择器    选中一类标签
+    通配符选择器  通常用于初始化页面的时候
+
+    层级选择器
+      后代选择器   空格隔开   
+      子代选择器   >    子一代被选中
+      相邻兄弟选择器 +  相邻的弟弟
+      普通兄弟选择器 ~  后面所有的弟弟
+    多选择器
+      ,
+    组合选择器
+      div.one
+      div#one

@@ -1,0 +1,29 @@
+1.块级，行内，空元素，替代元素
+2.form控件 9种控件 属性name type vlaue
+  reuqired
+  disabled
+  autofocus
+  checked
+  selected...
+3.html
+4.注释
+  <!-- content -->
+  /*css声明语句*/
+5.超链接
+6.get和post
+  1.是否安全
+  2.是否作为查询字符串
+  3.是否限制大小
+7.3中引入方式
+8.权重
+9.文本样式
+  color   text-align  text-shadow
+10.文本水平垂直居中，盒子相对于父级水平垂直居中
+11.display
+12.position
+13.简单动画
+  animaiton @keyframes
+  transition
+  tranform
+14.盒子模型
+  宽高   标准和IE

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div{
+      width:100px;
+      height: 100px;
+      background-color: orange;
+      /*forwards 代表动画执行结束时候，元素的状态是最后一帧*/
+      /*backwards 代表动画还没有执行的时候的第一帧*/
+      animation:myAnimation 5s 3 linear 2s backwards;
+    }
+    div:hover{
+      animation-play-state: paused;
+    }
+    @keyframes myAnimation{
+      0%{
+        width:100px;
+        height: 100px;
+        background-color: pink;
+      }
+      25%{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      50%{
+        width: 300px;
+        height: 300px;
+        background-color: purple;
+      }
+      75%{
+        width:200px;
+        height: 200px;
+        background-color: blue;
+      }
+      100%{
+        width:100px;
+        height: 100px;
+        background-color: black;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

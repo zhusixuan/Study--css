@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>z-index</title>
+  <style>
+    *{
+      margin: 0px;
+      padding:0;
+    }
+    .parent{
+      width:200px;
+      height: 200px;
+      border:2px solid red;
+      position: relative;
+    }
+    .linzhiying{
+      z-index:70;
+    }
+    .tianliang{
+      z-index: 100;
+    }
+    .son{
+      width:100px;
+      height:100px;
+    }
+    .kimi{
+      background-color: red;
+      position: absolute;
+      top:200px;
+      left: 200px;
+      z-index: 10;
+    }
+    .cindy{
+      background-color: blue;
+      position: absolute;
+      left: 180px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent linzhiying">
+    <div class="son kimi">kimi</div>
+  </div>
+  <div class="parent tianliang">
+    <div class="son cindy">cindy</div>
+  </div>
+</body>
+</html>
